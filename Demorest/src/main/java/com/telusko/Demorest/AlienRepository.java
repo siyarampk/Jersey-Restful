@@ -107,7 +107,7 @@ public class AlienRepository {
 		}
 	}
 	
-	public void printAll{
+	public void printAll(){
 	  System.out.println("Aline");		
 	}
 }
