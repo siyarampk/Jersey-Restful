@@ -106,4 +106,8 @@ public class AlienRepository {
 			e.printStackTrace();
 		}
 	}
+	
+	public void printAll{
+	  System.out.println("Aline");		
+	}
 }
