@@ -52,10 +52,12 @@ public class AlienRepository {
 	public Alien getAlien(int id) {
 		String sql = "select * from Alien where id='" + id + "'";
 		Alien a1 = new Alien();
+		
+		// Alien get by id
 		try {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
-
+				
 			if (rs.next()) {
 				a1.setId(rs.getInt("id"));
 				a1.setName(rs.getString("name"));
