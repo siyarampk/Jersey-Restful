@@ -33,8 +33,8 @@ public class AlienRepository {
 		try {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
-			// Allien get all alien;
-			// All
+		
+		
 			while (rs.next()) {
 				Alien a1 = new Alien();
 				a1.setId(rs.getInt("id"));
@@ -53,7 +53,7 @@ public class AlienRepository {
 		String sql = "select * from Alien where id='" + id + "'";
 		Alien a1 = new Alien();
 		
-		// Alien get by id 
+
 		try {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
@@ -71,7 +71,7 @@ public class AlienRepository {
 
 	public void create(Alien a1) {
 		String sql = "insert into alien values(?,?,?)";
-
+        // Create alien
 		try {
 			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setInt(1, a1.getId());
