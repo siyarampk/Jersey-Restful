@@ -53,7 +53,7 @@ public class AlienRepository {
 		String sql = "select * from Alien where id='" + id + "'";
 		Alien a1 = new Alien();
 		
-		// Alien get by id
+		// Alien get by id 
 		try {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
