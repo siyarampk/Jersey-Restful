@@ -34,11 +34,13 @@ public class AlienRepository {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
 			// Allien get all alien;
+			// All
 			while (rs.next()) {
 				Alien a1 = new Alien();
 				a1.setId(rs.getInt("id"));
 				a1.setName(rs.getString("name"));
 				a1.setPoint(rs.getInt("point"));
+				//aliens.add(a1);
 				aliens.add(a1);
 			}
 		} catch (Exception e) {
