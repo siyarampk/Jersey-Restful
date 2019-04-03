@@ -33,7 +33,7 @@ public class AlienRepository {
 		try {
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
-
+			// Allien get all alien;
 			while (rs.next()) {
 				Alien a1 = new Alien();
 				a1.setId(rs.getInt("id"));
